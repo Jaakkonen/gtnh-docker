@@ -9,4 +9,7 @@ services:
       - ./eula.txt:/minecraft/eula.txt
       - ./server.properties:/minecraft/server.properties
       - ./World:/minecraft/World
-
+      - ./whitelist.json:/minecraft/whitelist.json
+    # restart: always
+    tty: true
+    stdin_open: true
